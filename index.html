@@ -1,62 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>task 1</title>
-</head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    
-    h1 {
-        color: red;
-        text-align: center;
-        border-style: double;
-        border-radius: 5px;
-        background-color: greenyellow;
-    }
-    
-    nav {
-        color: black;
-        border: solid;
-        background-color: white;
-        /* margin-left: 15px; */
-        margin-top: 3px;
-    }
-    
-    image {
-        background-image: url("html.jpeg");
-        background-position: center;
-        background-size: 150px;
-        height: 300px;
-        width: 300px;
-    }
-    
-    footer {
-        text-align: center;
-        background-color: black;
-        color: white;
-        margin-top: 20px;
-    }
-</style>
-
-<body>
-    <h1>This is the first task</h1>
-    <nav>
-        <a href="Home">Home</a>
-        <a href="About">About</a>
-        <a href="Contact Us">Contact Us</a>
-        <a href="Help">Help</a>
-    </nav>
-    <img src="html.jpeg" alt="Error">
-    <footer>
-        #krisu 2001
-    </footer>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My First Page</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="navbar">
+        <nav class="topnav">
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+          <a class="active" href="#home">Home</a>
+        </nav>
+      </div>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="left-side">
+                <h1 class="page-heading">My First Page</h1>
+                <p class="page-sub-heading">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates, quae.
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="right-side">
+                <img
+                  class="page-image"
+                  src="https://source.unsplash.com/500x500/?coding"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <img src="html.jpeg" alt="Error" /> -->
+      <footer>
+        <p>
+          Author: Hege Refsnes<br />
+          <a href="mailto:hege@example.com">hege@example.com</a>
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
